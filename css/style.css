@@ -1,15 +1,15 @@
 /* ---------------GLOBAL STYLING------------- */
 .skip{
     font-family: 'Anybody', sans-serif;
-    background-color: #669bbc;
+    background-color: #0F52BA;
     left: 50%;
     position: absolute;
-    padding: 10px;
+    padding: 15px;
     transform: translate(-50%, -100%);
     transition: transform 0.3s;
     z-index: 100;
     font: 24px;
-    color: black;
+    color: #ffffff;
     text-decoration: none;
 }
 .skip:focus{
@@ -50,20 +50,53 @@ body{
     max-width: 150px;
     height: auto;
 }
-
-/* .intro_section{
-    background-image: url("../images/jjpbackground.jpeg");
-} */
+footer{
+    background-color: #0F52BA;
+    padding: 20px;
+}
+footer p{
+    color: #ffffff;
+    font-family: 'Anybody', sans-serif;
+    margin: 20px;
+}
+.footer_strong{
+    color: #ffffff;
+    font-family: 'Anybody', sans-serif;
+    font-weight: bold;
+}
+.footer_nav{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.footer_nav a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Anybody', sans-serif;
+}
+.footer_nav a:hover{
+    text-decoration: underline;
+}
 
 /* ---------------JERKPIT CATERING------------- */
 h1{
-    font-size: 75px;
+    font-size: 80px;
     background-image: url("../images/background-photo.jpeg");
     color: #6082B6;
     padding: 100px;
     font-family: 'Anybody', sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
+}
+.banner_notice{
+    font-size: 20px;
+    background-color: #6082B6;
+    color: #ffffff;
+    line-height: 1.8;
+    padding: 10px;
+    text-transform: none;
 }
 .notice{
     background-color: #0F52BA;
@@ -73,24 +106,24 @@ h1{
     text-align: center;
 }
 .notice h2:nth-child(1) {
-    font-size: 20px;
+    font-family: 'Anybody', sans-serif;
+    font-size: 30px;
     font-weight: bold;
 }
 .notice h2:nth-child(2) {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 .notice h2:nth-child(3) {
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
-}
-.notice h2:nth-child(4) {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-family: 'Anybody', sans-serif;
 }
 strong{
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 .serving_size{
     background-color: #0F52BA;
@@ -101,44 +134,75 @@ strong{
 }
 .serving_size h2:nth-child(1) {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 20px;
 }
 .serving_size h2:nth-child(2) {
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 18px;
 }
 .catering_nav_title{
     font-weight: bolder;
-    font-size: 23px;
-    margin-left: 20px;
+    font-size: 28px;
+    text-align: center;
     margin-bottom: 15px;
+    margin-top: 40px;
+    font-family: 'Anybody', sans-serif;
 }
 #catering_nav{
     margin-bottom: 20px;
+    text-align: center;
 }
 #catering_nav a{
     text-decoration: none;
     margin-left: 15px;
-    font-size: 17px;
+    font-size: 20px;
     color: #0F52BA;
     font-weight: bold;
+    font-family: 'Anybody', sans-serif;
+    line-height: 1.6;
 }
 #catering_nav a:nth-child(1){
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
 }
 #catering_nav a:hover{
-    font-size: 19px;
+    font-size: 23px;
 }
 #meat_entree{
     margin-top: 40px;
     margin-left: 20px;
 }
-#meat_entree h2:nth-child(1){
+#pasta_entree{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#pita_entree{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#pork_entree{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#fish_entree{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#veg_entree{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#sides{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.dish_type{
     font-size: 20px;
     margin-bottom: 20px;
     font-weight: bold;
+    font-family: 'Anybody', sans-serif;
+    margin-left: 20px;
 }
 .the_dish{
     border: 2px solid #0F52BA;
@@ -147,7 +211,8 @@ strong{
     width: 150px;
     height: 150px;
     box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
-    margin-bottom: 20px;
+    margin: 20px;
+    background-color: #f5f5f5;
 }
 .the_dish h3{
     margin-bottom: 10px;
@@ -157,9 +222,6 @@ strong{
     margin-bottom: 10px;
 }
 .dishes{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
