@@ -21,22 +21,18 @@ body{
 .nav_bar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #ffffff;
 }
 .nav_bar a{
     font-family: 'Anybody', sans-serif;
-    font-size: 11px;
+    font-size: 15px;
     text-decoration: none;
     color: #0F52BA;
     margin-right: 15px;
 }
-.nav_bar a.active{
-    font-weight: bold;
-}
 .nav_bar a:hover{
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 .nav_links li a:visited{
     color: inherit;
@@ -91,7 +87,7 @@ h1{
 /* ---------------MOBILE JERK PIT CATERING------------- */
 .banner_notice{
     font-size: 10px;
-    background-color: #6082B6;
+    background-color: #0F52BA;
     color: #ffffff;
     padding: 10px;
     text-transform: none;
@@ -285,7 +281,7 @@ h3 p{
 }
 .mprice{
     font-size: 18px;
-    color: #6082B6;
+    color: #0F52BA;
 }
 .mthe_dish p{
     margin-bottom: 20px;
@@ -320,20 +316,157 @@ h3 p{
     margin-bottom: 20px;
 }
 
+ /* ---------------MOBILE JERK PIT HOME STYLING------------- */
+ .intro_section{
+    background-color: #0F52BA;
+    padding: 10px;
+ }
+ .intro_section p{
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+ }
+ .welcome_wrapper{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+ }
+ .welcome_wrapper h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: none;
+    font-family: 'Sofia', sans-serif;
+    text-transform: none;
+    color: #ffffff;
+    font-size: 50px;
+    background-color: #6082B6;
+    border: 10px solid #0F52BA;
+ }
+ .welcome_text_strong{
+    font-family: 'Anybody', sans-serif;
+    font-size: 75px;
+ }
+ .welcome_image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+ }
+ .welcome_wrapper img{
+    width: 100%;
+ }
+ .about{
+    margin: 50px 20px 30px 20px;
+ }
+ .about h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    background-image: none;
+    font-weight: bolder;
+    text-align: center;
+    color: #0F52BA;
+    margin-bottom: 20px;
+    font-family: 'Anybody', sans-serif;
+ }
+ .about p{
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 10px;
+ }
+.featured_dish{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.featured_title{
+    font-size: 35px;
+    text-transform: uppercase;
+    background-image: none;
+    font-weight: bolder;
+    text-align: center;
+    color: #0F52BA;
+    margin-bottom: 20px;
+    font-family: 'Anybody', sans-serif;
+}
+.fdish{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 10px solid #0F52BA;
+}
+.fdish:hover{
+    border: 15px solid #0F52BA;
+}
+.plan_dish{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+}
+.curry_dish{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.chicken_dish{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+}
+.featured_text{
+    margin: auto;
+}
+.featured_text:nth-child(2){
+    margin-left: 10px;
+}
+.featured_text a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.featured_text p{
+    margin-top: 10px;
+}
+.featured_text a:visited{
+    color: inherit;
+}
+.featured_text a:hover{
+    text-decoration: underline;
+}
+.sep_div{
+    background-color: #6082B6;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 /* ---------------TABLET VIEW------------- */
 @media only screen and (min-width: 768px) {
+    .intro_section p{
+        font-size: 20px;
+     }
+    .nav_bar{
+        max-width: fit-content;
+    }
     .nav_bar a{
         font-family: 'Anybody', sans-serif;
         font-size: 25px;
         text-decoration: none;
         color: #0F52BA;
-    }
-    .nav_bar a.active{
-        font-weight: bold;
+        margin-left: 25px;
+        margin-right: 25px;
+
     }
     .nav_bar a:hover{
         font-weight: bold;
-        font-size: 27px;
+        text-decoration: underline;
     }
     .nav_links li a:visited{
         color: inherit;
@@ -357,18 +490,14 @@ h3 p{
     
     .nav_bar a{
         font-family: 'Anybody', sans-serif;
-        font-size: 30px;
+        font-size: 20px;
         text-decoration: none;
         color: #0F52BA;
         margin-left: 25px;
         margin-right: 25px;
     }
-    .nav_bar a.active{
-        font-weight: bold;
-    }
     .nav_bar a:hover{
-        font-weight: bold;
-        font-size: 25px;
+        font-weight: bolder;
     }
     .nav_links a:visited{
         color: inherit;
@@ -376,11 +505,11 @@ h3 p{
     }
     .nav_image{
         display: flex;
-        max-width: 200px;
+        max-width: 150px;
         height: auto;
         margin-left: 25px;
     }
-    /* ---------------JERKPIT CATERING------------- */
+    /* ---------------DESKTOP JERKPIT CATERING------------- */
     h1{
         font-size: 90px;
         background-image: url("../images/background-photo.jpeg");
@@ -392,7 +521,7 @@ h3 p{
     }
     .banner_notice{
         font-size: 20px;
-        background-color: #6082B6;
+        background-color: #0F52BA;
         color: #ffffff;
         line-height: 1.8;
         padding: 10px;
@@ -526,7 +655,7 @@ h3 p{
         flex-wrap: wrap;
     }
     
-    /* ---------------JERKPIT MENU------------- */
+    /* ---------------DESKTOP JERKPIT MENU------------- */
     .calypso_starters{
         margin: 50px 20px 20px 20px;
     }
@@ -582,7 +711,7 @@ h3 p{
     }
     .mprice{
         font-size: 20px;
-        color: #6082B6;
+        color: #0F52BA;
     }
     .mthe_dish p{
         margin-bottom: 20px;
@@ -617,6 +746,18 @@ h3 p{
         margin-left: 20px;
         margin-bottom: 20px;
     }
-}
-
-
+    /* ---------------DESKTOP JERKPIT HOME------------- */
+    .fdish{
+        width: 400px;
+        height: 400px;
+    }
+    .featured_dish{
+        margin: 50px 200px 200px 200px;
+    }
+    .featured_text a p{
+        text-align: end;
+    }
+    .featured_title{
+        margin-top: 50px;
+    }
+    }
